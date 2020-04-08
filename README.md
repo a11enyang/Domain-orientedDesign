@@ -1,4 +1,6 @@
-### 注意事项
+[TOC]
+
+### 1.注意事项
 
 - 每次提交内容之前记得git pull，不然会将组员的内容覆盖
 - git的基本操作
@@ -11,9 +13,7 @@
 
 
 
-### 
-
-### 课业要求
+### 2.课业要求
 
 - 检查的时间点：5月13号半期检查    6月10号终期检查
 - 项目题目：铁路售票系统
@@ -51,7 +51,30 @@
 
 
 
-### 每周任务
+### 3.开发方式
+
+采用scrum迭代开发模型
+
+![](https://raw.githubusercontent.com/wiki/a11enyang/Picture/scrum模型.png)
+
+- 项目列表
+  - product backlog
+  - sprint backlog
+- 三个会议
+  - srpint planing 实施每个功能之前的计划
+  - daily scrum 描述每天的开发进度
+  - sprint review 一个功能之后的回顾
+- 工作流程
+  - 根据需求分析得出product backlog
+  - 讨论下次要开发的功能形成sprint backlog
+  - 团队在1到2周之内实现该功能，并且每天都要进行daily scrum，最后输出的产品是一个可发布的产品
+  - sprint回顾
+
+
+
+### 4.每周任务
+
+#### 第一周
 
 - 需求讨论
   - [ ] 调研市场上同类产品功能
@@ -59,3 +82,4 @@
   - [ ] 对每个功能完成业务逻辑分析
 - 环境
   - [x] intellij IDEA 和 spring MVC
+
