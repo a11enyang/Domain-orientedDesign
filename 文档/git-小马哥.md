@@ -104,7 +104,9 @@ git diff 比较本地文件夹与本地库保存的文件的不同
 git diff --cached 比较索引区与本地库保存的文件的不同啊
  ```
 
-![image-20200325171704565](./note.assets/image-20200325171704565.png)
+![image-20200325171704565](![](https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325171704565.png)
+
+
 
 链接：https://blog.csdn.net/Jeffxu_lib/article/details/86589070
 
@@ -145,7 +147,7 @@ git commit --amend
 
 ### 13.分支问题
 
-![image-20200325210052875](./note.assets/image-20200325210052875.png)
+![image-20200325210052875](![](https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325210052875.png)
 
 从master分支中建立了一个新的分支，并且在主分支和feature分支上都有了新的提交
 
@@ -161,7 +163,7 @@ git branch //查看当前分支的情况，*表示当前正在使用的分支
 
 ### 14.git rebase
 
-![image-20200325212254173](./note.assets/image-20200325212254173.png)
+![image-20200325212254173](<img src="https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325212254173.png" style="zoom:50%;" />
 
 在本地创建两个分支，一个是master，一个是my_cool_fearure
 
@@ -173,7 +175,7 @@ git checkout -b master
 
 然后获取同事的内容
 
-![image-20200325212716271](./note.assets/image-20200325212716271.png)
+![image-20200325212716271](![](https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325212716271.png)
 
 ```bash
 git pull
@@ -191,7 +193,7 @@ git checkout -b my_cool_feature
 git rebase master
 ```
 
-![image-20200325213032092](./note.assets/image-20200325213032092.png)
+![image-20200325213032092](<img src="https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325213032092.png" />
 
 
 
@@ -203,7 +205,7 @@ git rebase master
    git rebase my_cool_feature
    ```
 
-   ![image-20200325213317962](./note.assets/image-20200325213317962.png)
+   ![image-20200325213317962](<img src="https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325213032092.png" style="zoom:50%;" />
 
 4. 最后提交内容
 
@@ -230,9 +232,11 @@ git merge master feature
 
 feature 分支中新的合并提交（merge commit）将两个分支的历史连在了一起。你会得到下面这样的分支结构：
 
-![image-20200325223126669](./note.assets/image-20200325223126669.png)
+![image-20200325223126669](![](<img src="https://raw.githubusercontent.com/a11enyang/Picture/master/img/image-20200325223126669.png" style="zoom:50%;" />
 
 https://github.com/geeeeeeeeek/git-recipes/tree/master/sources
+
+
 
 
 
