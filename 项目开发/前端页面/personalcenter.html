@@ -195,7 +195,7 @@
                             <!-- Default panel contents -->
                             <div class="panel-heading" style="height: 60px;">
                                 <div style="margin-top: 10px; width: 100px; float: left;">用户信息</div>
-                                <button type="button" class="btn btn-success" style="float: right;">编辑</button>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myInfoEdit" style="float: right;">编辑</button>
                             </div>
                             <div class="info-body">
                                 <div class="info-item row">
@@ -203,24 +203,24 @@
                                     <div class="info-bd col-md-6">Mercury</div>
                                 </div>
                                 <div class="info-item row">
-                                   <div class="info-label col-md-2">姓名:</div>
-                                   <div class="info-bd col-md-6">潘尚</div>
-                               </div>
-                               <div class="info-item row">
-                                   <div class="info-label col-md-2">性别:</div>
-                                   <div class="info-bd col-md-6">男</div>
-                               </div>
-                               <div class="info-item row">
-                                   <div class="info-label col-md-2">证件号:</div>
-                                   <div class="info-bd col-md-6">***************</div>
-                               </div>
-                               <div class="info-item row">
-                                   <div class="info-label col-md-2">联系电话:</div>
-                                   <div class="info-bd col-md-6">1883456743</div>
-                               </div>
+                                    <div class="info-label col-md-2">姓名:</div>
+                                    <div class="info-bd col-md-6">潘尚</div>
+                                </div>
+                                <div class="info-item row">
+                                    <div class="info-label col-md-2">性别:</div>
+                                    <div class="info-bd col-md-6">男</div>
+                                </div>
+                                <div class="info-item row">
+                                    <div class="info-label col-md-2">证件号:</div>
+                                    <div class="info-bd col-md-6">***************</div>
+                                </div>
+                                <div class="info-item row">
+                                    <div class="info-label col-md-2">联系电话:</div>
+                                    <div class="info-bd col-md-6">1883456743</div>
+                                </div>
                             </div>
                         </div>
-                         
+
                     </div>
                     <!-- 3 -->
                     <div class="tab-pane" id="infomanage">
@@ -228,7 +228,8 @@
                             <!-- Default panel contents -->
                             <div class="panel-heading" style="height: 60px;">
                                 <div style="margin-top: 10px; width: 100px; float: left;">常用乘车信息</div>
-                                <button type="button" class="btn btn-success" style="float: right;">新增乘车信息</button>
+                                <button type="button" class="btn btn-success" data-toggle="modal"
+                                    data-target="#moreinfo" style="float: right;">新增乘车信息</button>
                             </div>
                             <!-- Table -->
                             <table class="table table-striped">
@@ -237,6 +238,7 @@
                                         <th>序号</th>
                                         <th>姓名</th>
                                         <th>证件号</th>
+                                        <th>联系电话</th>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
@@ -245,6 +247,7 @@
                                         <td>1</td>
                                         <td>11</td>
                                         <td>111</td>
+                                        <td>1111</td>
                                         <td>
                                             <button type="button" class="btn btn-danger">删除</button>
                                             <button type="button" class="btn btn-warning">更改</button>
@@ -254,6 +257,7 @@
                                         <td>2</td>
                                         <td>22</td>
                                         <td>222</td>
+                                        <td>2222</td>
                                         <td>
                                             <button type="button" class="btn btn-danger">删除</button>
                                             <button type="button" class="btn btn-warning">更改</button>
@@ -267,6 +271,70 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- 新增乘车信息的弹窗 -->
+    <div class="modal fade" id="moreinfo" tabindex="-1" role="dialog" aria-labelledby="moreinfoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:  #d9edf7;">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="moreinfoLabel">新增乘车信息</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="contactInputName">姓名</label>
+                            <input type="text" class="form-control" id="contactInputName" placeholder="姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactInputIDNum">身份证号</label>
+                            <input type="text" class="form-control" id="contactInputIDNum" placeholder="身份证号">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactInputPhoneNum">联系电话</label>
+                            <input type="text" class="form-control" id="contactInputPhoneNum" placeholder="联系电话">
+                        </div>
+                        <button type="submit" class="btn btn-danger">提交</button>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+    <!-- 编辑个人信息的弹窗 -->
+    <div class="modal fade" id="myInfoEdit" tabindex="-1" role="dialog" aria-labelledby="moreinfoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:  #d9edf7;">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="moreinfoLabel">编辑个人信息</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="myInputVname">用户名</label>
+                            <input type="text" class="form-control" id="myInputVname" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="myInputName">姓名</label>
+                            <input type="text" class="form-control" id="myInputName" placeholder="姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="mySex">性别</label>
+                            <input type="text" class="form-control" id="myInputName" placeholder="性别">
+                        </div>
+                        <div class="form-group">
+                            <label for="myInputIDNum">身份证号</label>
+                            <input type="text" class="form-control" id="myInputIDNum" placeholder="身份证号">
+                        </div>
+                        <div class="form-group">
+                            <label for="myInputPhoneNum">联系电话</label>
+                            <input type="text" class="form-control" id="myInputPhoneNum" placeholder="联系电话">
+                        </div>
+                        <button type="submit" class="btn btn-danger">提交</button>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
     </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
@@ -300,8 +368,9 @@
             margin-left: 100px;
             margin-top: 30px;
         }
-        .info-item{
-            margin: 10px 0px 10px 100px; 
+
+        .info-item {
+            margin: 10px 0px 10px 100px;
         }
     </style>
 </body>
